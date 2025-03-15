@@ -38,7 +38,6 @@ public class HashMap {
     }
     public void put(String key, String value){
         int hash = Math.abs(key.hashCode()) % SIZE;
-        System.out.println(key.hashCode() +":"+hash);
         Entry e = entries[hash];
         if(e!=null){
 
